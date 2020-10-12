@@ -1,0 +1,50 @@
+.content{
+  cursor: none;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  background: #fafaef;
+  width: 100%;
+  height: 100%;
+  .content-product{
+    width: 150vw;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    .item{
+      transition: 0.5s;
+      position: absolute;
+      left: 100vw;
+      z-index: 1;
+
+      img{
+  
+        width: 20vw;
+      }
+    }
+  }
+}
+
+.cursor{
+  position: absolute;
+  background: #f3521b;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  z-index: 999;
+  transform: translate(-50%, -50%);
+}
+
+.overlay{
+  position: absolute;
+  z-index: 10;
+  width: 4300%;
+  height: 100%;
+  left: 10%;
+  top: 0;
+}
